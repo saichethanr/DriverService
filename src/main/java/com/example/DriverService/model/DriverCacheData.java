@@ -11,4 +11,5 @@ public class DriverCacheData {
     private String userid;
     private String driverLatitude;
     private String driverLongitude;
+    private int seats;
 }

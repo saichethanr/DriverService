@@ -26,7 +26,8 @@ public class DriverServiceImpl implements DriverService {
         DriverCacheData cacheData = new DriverCacheData(
                 driverDetails.getUserId(),
                 driverDetails.getDriverLatitude(),
-                driverDetails.getDriverLongitude()
+                driverDetails.getDriverLongitude(),
+                driverDetails.getSeats()
         );
 
         redisTemplate.opsForValue().set(driverDetails.getUserId(), cacheData);
