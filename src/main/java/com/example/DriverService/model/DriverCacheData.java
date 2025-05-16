@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class DriverCacheData {
     private String userid;
-    private String driverLatitude;
-    private String driverLongitude;
+    private double driverLatitude;
+    private double driverLongitude;
     private int seats;
 }

@@ -9,21 +9,21 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name="driver_details")
+@Table(name="driver_det")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class DriverDetails {
     @Id
-        private String userId;
+    private String userId;
 
     private String date;
 
-    private String driverLatitude;
-    private String driverLongitude;
+    private double driverLatitude;
+    private double driverLongitude;
 
-    private String destinationLatitude;
-    private String destinationLongitude;
+    private double destinationLatitude;
+    private double destinationLongitude;
 
     private String model;
     private String make;
